@@ -1,0 +1,32 @@
+:host {
+    display: block;
+    position: relative;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+    border-left: 2px solid transparent;
+    font-size: 0.875rem;
+  
+    &.danger {
+      border-left-color: red;
+      background-color: red;
+    }
+  
+    &.warning {
+      border-left-color: yellow;
+      background-color: yellow;
+    }
+  
+    &.success {
+      border-left-color: green;
+      background-color: green;
+    }
+  
+    &.info {
+      border-left-color: blue;
+      background-color: blue;
+    }
+  
+    .title {
+      font-family: bold;
+    }
+  }

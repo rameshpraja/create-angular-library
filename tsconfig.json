@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "rpx-components-ui": [
+        "dist/rpx-components-ui"
+      ],
+      "rpx-components-ui/*": [
+        "dist/rpx-components-ui/*"
+      ]
+    }
   }
 }

@@ -125,6 +125,41 @@
           }
         }
       }
+    },
+    "rpx-components-ui": {
+      "root": "projects/rpx-components-ui",
+      "sourceRoot": "projects/rpx-components-ui/src",
+      "projectType": "library",
+      "prefix": "rpx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/rpx-components-ui/tsconfig.lib.json",
+            "project": "projects/rpx-components-ui/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rpx-components-ui/src/test.ts",
+            "tsConfig": "projects/rpx-components-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/rpx-components-ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rpx-components-ui/tsconfig.lib.json",
+              "projects/rpx-components-ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "rpx-components-app"
